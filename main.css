@@ -102,10 +102,16 @@ li {
   width: 3vw;
   height: 3vw;
   background-color: black;
-  border-radius: 90vw;
+  border-radius: 2.7vw;
   border: 1.2vw white solid;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  animation-name: tapespin;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
 
 #c-wheel-right {
   top: 0.57vw;
@@ -120,8 +126,52 @@ li {
   height: 8vw;
   background-color: black;
   position: relative;
-  bottom: 18.1vw;
-  left: 18.2vw;
-  transform: rotate(30deg); }
+  bottom: 16.1vw;
+  left: 18.5vw;
+  transform: rotate(60deg); }
+
+.sprockets {
+  width: 0.5vw;
+  height: 0.5vw;
+  background-color: white;
+  display: inline-block; }
+
+#s-1 {
+  transform: rotate(30deg);
+  position: relative;
+  left: 0.05vw; }
+
+#s-2 {
+  transform: rotate(90deg);
+  position: relative;
+  bottom: 0.6vw;
+  left: 0.4vw; }
+
+#s-3 {
+  transform: rotate(30deg);
+  position: relative;
+  top: 1.4vw;
+  left: 0.8vw; }
+
+#s-4 {
+  transform: rotate(60deg);
+  position: relative; }
+
+#s-5 {
+  transform: rotate(60deg);
+  position: relative;
+  left: 0.05vw; }
+
+#s-6 {
+  transform: rotate(0deg);
+  position: relative;
+  left: 0.4vw;
+  top: 0.65vw; }
+
+@keyframes tapespin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=main.css.map */
