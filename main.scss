@@ -3,10 +3,14 @@ body {
   border: 0;
   padding: 0;
   background-color: "";
-  background-image: url('images/cassette.png');
+  // background-image: url('images/cassette.png');
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: 10vw;
+}
+
+main {
+  height: 40vw;
 }
 
 header {
@@ -58,4 +62,88 @@ li {
 
 #h-box-2 {
   grid-column: 2;
+}
+
+//cassette 
+
+#c-body {
+  background-color: lightgrey;
+  width: 36vw;
+  height: 21vw;
+  position: relative;
+  left: 32vw;
+  top: 8.2vw;
+  border-top: 0.5vw grey solid;
+  border-bottom: 0.5vw grey solid;
+  border-radius: 1vw;
+  // opacity: .4;
+}
+
+#c-inside {
+  background-color: black;
+  width: 31vw;
+  height: 19vw;
+  position: relative;
+  top: 0.7vw;
+  left: 3.5vw;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 25% 0%);
+}
+
+#c-light-inside {
+  background-color: grey;
+  height: 7vw;
+  width: 20vw;
+  position: relative;
+  left: 9vw;
+  top: 7vw;
+}
+
+#c-tape-l {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 90vw;
+  background-color: black;
+  position: relative;
+  bottom: 1.5vw;
+  right: 2vw;
+}
+
+#c-tape-r {
+  width: 6.5vw;
+  height: 6.5vw;
+  border-radius: 90vw;
+  background-color: black;
+  position: relative;
+  bottom: 9.75vw;
+  left: 11vw;
+}
+
+.c-wheels {
+  width: 3vw;
+  height: 3vw;
+  background-color: black;
+  border-radius: 90vw;
+  border: 1.2vw white solid;
+  display: inline-block;
+  position: relative;
+}
+
+#c-wheel-right {
+  top: 0.57vw;
+  left: 0.57vw;
+}
+
+#c-wheel-left {
+  top: 2.3vw;
+  left: 1.5vw;
+}
+
+.tape {
+  width: 0.2vw;
+  height: 8vw;
+  background-color: black;
+  position: relative;
+  bottom: 18.1vw;
+  left: 18.2vw;
+  transform: rotate(30deg);
 }
