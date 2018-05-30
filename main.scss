@@ -67,7 +67,7 @@ li {
 //cassette 
 
 .buttons {
-  height: 2vw;
+  height: 1.7vw;
   width: 3vw;
   background-color: black;
   display: inline-block;
@@ -75,8 +75,8 @@ li {
   margin-right: 0.3vw;
   border-radius: 0.5vw 0.5vw 0 0vw;
   position: relative;
-  left: 49.8vw;
-  z-index: -2;
+  bottom: 8.5vw;
+  left: 18vw;
 }
 
 #play {
@@ -84,11 +84,11 @@ li {
 }
 
 #bottom-square {
-  border-radius: 0.5vw;
+  border-radius: 0 0 0.5vw 0.5vw;
 }
 
 #bottom-circle {
-  border-radius: 15vw;
+  border-radius: 0 0 0.5vw 0.5vw;
   width: 5vw;
 }
 
@@ -96,9 +96,8 @@ li {
   display: inline-block;
   transform: rotate(270deg);
   position: relative;
-  top: 48vw;
-  left: 57.5vw;
-  z-index: -2;
+  left: 34.35vw;
+  top: 11.5vw;
 }
 
 #c-body {
@@ -197,7 +196,7 @@ li {
    animation-duration: 2s;
    animation-fill-mode: forwards;
    position: relative;
-   opacity: 0.5;
+   opacity: 0.8;
 }
 
 #block-up {
@@ -216,19 +215,19 @@ li {
   top: 1.2vw;
 }
 
-// @keyframes push {
-//   0% { right: 0; }
-//   10% { top: 0.2vw; }
-//   100% { right: 35vw; top: 0.5vw; }
-// }
+@keyframes push {
+  0% { right: 0; }
+  10% { top: 0.5vw; }
+  100% { right: 35vw; top: 1.4vw; }
+}
 
-// @keyframes tapespin {
-//   from { transform: rotate(0deg); }
-//   to { transform: rotate(360deg); }
-// }
+@keyframes tapespin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 
-// @keyframes spin {
-//   0% { transform: rotate(0deg); }
-//   30% { transform: rotate(90deg); }
-//   100% { bottom: 2vw; transform: rotate(90deg); }
-// }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  30% { transform: rotate(90deg); }
+  100% { bottom: 2vw; transform: rotate(90deg); }
+}
