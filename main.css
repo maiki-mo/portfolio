@@ -32,8 +32,22 @@ ul {
   margin-left: 1vw;
   text-align: center; }
 
-a, a:-webkit-any-link {
+a:-webkit-any-link {
   text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+span > p {
+  font-family: 'Teko', sans-serif;
+  color: #5BB579;
+  position: relative;
+  font-size: 3vw;
+  bottom: 15vw;
+  left: 7vw; }
+
+#stereo {
+  font-size: 1.5vw; }
 
 a > p {
   display: inline;
@@ -201,8 +215,7 @@ li {
   animation-delay: 2s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  position: relative;
-  opacity: 0.8; }
+  position: relative; }
 
 #block-up {
   height: 3vw;
@@ -217,6 +230,11 @@ li {
   background-color: black;
   position: relative;
   top: 1.2vw; }
+
+#flare {
+  position: relative;
+  left: 1.1vw;
+  bottom: 18.4vw; }
 
 @keyframes push {
   0% {
