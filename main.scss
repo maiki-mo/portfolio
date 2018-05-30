@@ -19,10 +19,15 @@ header {
 
 h1 {
   margin: 0.1vw;
-  font-size: 2vw;
-  margin-top: 0.7vw;
+  margin-top: 0.5vw;
+  font-size: 2.5vw;
+  margin-top: 2vw;
   margin-left: 1.4vw;
   font-family: 'Special Elite', cursive;
+}
+
+.cas-img {
+  width: 5vw;
 }
 
 hr {
@@ -35,8 +40,40 @@ ul {
   text-align: center;
 }
 
+a>p {
+  display: inline;
+  position: relative;
+  top: 2.7vw;
+  font-size: 2vw;
+  padding: 1vw;
+  opacity: 0;
+}
+
+.container:hover a>p {
+  opacity: 1;
+}
+
+.container:hover .cas-img {
+  opacity: 0.1;
+}
+
+#p-1 {
+  color: red;
+  right: 2.2vw;
+}
+
+#p-2 {
+  color: blue;
+  right: 3vw;
+}
+
+#p-3 {
+  color: green;
+  right: 0.9vw;
+}
+
 ul:last-child {
-  margin-right: 1.7vw;
+  margin-right: 3vw;
 }
 
 li {
@@ -47,8 +84,8 @@ li {
   padding: 0.5vw;
   font-family: 'Special Elite', cursive;
   float: right;
-  margin-left: 1vw;
-  margin-top: 0.7vw;
+  margin-left: 4vw;
+  margin-top: -1.4vw;
 }
 
 .head-container {
@@ -187,6 +224,7 @@ li {
   bottom: 13.7vw;
   left: 19.8vw;
   transform: rotate(50deg);
+  overflow: hidden;
 }
 
 #cassette {
