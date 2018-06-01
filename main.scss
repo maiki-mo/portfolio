@@ -270,13 +270,40 @@ li {
   width: 10vw;
   background-color: black;
   position: relative;
-  top: 1.2vw;
+  top: 1.23vw;
 }
 
 #flare {
+  width: 31vw;
   position: relative;
   left: 1.1vw;
   bottom: 18.4vw;
+}
+
+#star {
+  width: 8vw;
+  position: relative;
+  bottom: 39.3vw;
+}
+
+//modals
+
+.modal {
+  height: 37.5vw;
+  width: 65vw;
+  background-color: red;
+  position: relative;
+  left: 30vw;
+  bottom: 47vw;
+  display: none;
+}
+
+#portfolio {
+  background-color: blue;
+}
+
+#contact {
+  background-color: green;
 }
 
 @keyframes push {
@@ -294,4 +321,8 @@ li {
   0% { transform: rotate(0deg); }
   30% { transform: rotate(90deg); }
   100% { bottom: 2vw; transform: rotate(90deg); }
+}
+
+@media (min-width: 1400px) {
+  html { display: none }
 }
