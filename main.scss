@@ -289,21 +289,24 @@ li {
 //modals
 
 .modal {
-  height: 37.5vw;
+  height: 55vw;
   width: 65vw;
   background-color: red;
   position: relative;
   left: 30vw;
   bottom: 47vw;
-  display: none;
+  margin-bottom: 10vw;
+  // display: none;
 }
 
 #portfolio {
   background-color: blue;
+  display: none;
 }
 
 #contact {
   background-color: green;
+  display: none;
 }
 
 @keyframes push {
