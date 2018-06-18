@@ -291,7 +291,7 @@ li {
 .modal {
   height: 55vw;
   width: 65vw;
-  background-image: url('/images/tape-background.png');
+  // background-image: url('/images/tape-background.png');
   background-size: cover;
   position: relative;
   left: 30vw;
@@ -303,6 +303,15 @@ li {
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  text-align: center;
+}
+
+#home {
+  overflow: hidden;
+}
+
+#pika {
+  margin-top: 20vw;
 }
 
 #portfolio {
@@ -338,5 +347,5 @@ li {
 }
 
 @media (min-width: 1400px) {
-  html { display: none }
+  body { margin: 0 20vw; }
 }

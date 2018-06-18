@@ -245,7 +245,6 @@ li {
 .modal {
   height: 55vw;
   width: 65vw;
-  background-image: url("/images/tape-background.png");
   background-size: cover;
   position: relative;
   left: 30vw;
@@ -256,7 +255,8 @@ li {
   animation-delay: 4s;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  text-align: center; }
 
 #portfolio {
   background-color: blue; }
@@ -291,7 +291,7 @@ li {
     bottom: 2vw;
     transform: rotate(90deg); } }
 @media (min-width: 1400px) {
-  html {
-    display: none; } }
+  body {
+    margin: 0 20vw; } }
 
 /*# sourceMappingURL=main.css.map */
