@@ -2,8 +2,6 @@ body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: "";
-  // background-image: url('images/cassette.png');
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: 10vw;
@@ -40,8 +38,25 @@ ul {
   text-align: center;
 }
 
-a, a:-webkit-any-link {
+a:-webkit-any-link {
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+span>p {
+  font-family: 'Teko', sans-serif;
+  color: #5BB579;
+  position: relative;
+  font-size: 3vw;
+  bottom: 15vw;
+  left: 7vw;
+}
+
+#stereo {
+  font-size: 1.5vw;
 }
 
 a>p {
@@ -94,11 +109,12 @@ li {
 
 .head-container {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 50%;
 }
 
 #h-box-1 {
   grid-column: 1;
+  padding-left: 1vw;
 }
 
 #h-box-2 {
@@ -238,7 +254,6 @@ li {
    animation-duration: 2s;
    animation-fill-mode: forwards;
    position: relative;
-   opacity: 0.8;
 }
 
 #block-up {
@@ -254,7 +269,93 @@ li {
   width: 10vw;
   background-color: black;
   position: relative;
-  top: 1.2vw;
+  top: 1.23vw;
+}
+
+#flare {
+  width: 31vw;
+  position: relative;
+  left: 1.1vw;
+  bottom: 18.4vw;
+}
+
+#star {
+  width: 8vw;
+  position: relative;
+  bottom: 39.3vw;
+}
+
+//modals
+
+.modal {
+  height: 55vw;
+  width: 62vw;
+  background-image: url('/images/tape-background.png');
+  background-size: cover;
+  position: relative;
+  left: 30vw;
+  bottom: 47vw;
+  margin-bottom: 10vw;
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  text-align: left;
+  font-family: 'Permanent Marker', cursive;
+  padding-top: 8.5vw;
+  padding-left: 2vw;
+  display: flex;
+}
+
+#m-box-1 {
+  width: 40vw;
+}
+
+#m-box-2 {
+  padding-left: 13vw;
+  padding-right: 4vw;
+}
+
+.modal>div>h3 {
+  font-size: 2.5vw;
+  margin: 0;
+}
+
+.modal>div>h2 {
+  margin-left: 10vw;
+}
+
+#m-box-2>p {
+  font-size: 1.4vw;
+}
+
+.modal-print {
+  margin-bottom: 1vw;
+}
+
+.list {
+  margin-top: 4vw;
+}
+
+#home {
+  overflow: hidden;
+}
+
+#portfolio {
+  background-color: blue;
+  // display: none;
+}
+
+#contact {
+  background-color: green;
+  // display: none;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes push {
@@ -272,4 +373,16 @@ li {
   0% { transform: rotate(0deg); }
   30% { transform: rotate(90deg); }
   100% { bottom: 2vw; transform: rotate(90deg); }
+}
+
+@media (min-width: 1400px) {
+  body {
+  max-width: 1400px;
+  margin: 0 auto; }
+}
+
+@media ( max-width: 980px) {
+  #cassette {
+    display: none;
+  }
 }
