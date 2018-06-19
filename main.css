@@ -91,7 +91,7 @@ li {
 
 .head-container {
   display: grid;
-  grid-template-columns: 60% 40%; }
+  grid-template-columns: 50% 50%; }
 
 #h-box-1 {
   grid-column: 1; }
@@ -258,6 +258,12 @@ li {
   animation-fill-mode: forwards;
   text-align: center; }
 
+#home {
+  overflow: hidden; }
+
+#pika {
+  margin-top: 20vw; }
+
 #portfolio {
   background-color: blue; }
 
@@ -292,6 +298,7 @@ li {
     transform: rotate(90deg); } }
 @media (min-width: 1400px) {
   body {
-    margin: 0 20vw; } }
+    max-width: 1400px;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */
