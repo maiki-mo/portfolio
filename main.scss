@@ -296,7 +296,7 @@ li {
   left: 30vw;
   bottom: 47vw;
   margin-bottom: 10vw;
-  opacity: 1;
+  opacity: 0;
   animation-name: fadein;
   animation-delay: 4s;
   animation-duration: 2s;
@@ -335,6 +335,10 @@ li {
   margin-bottom: 1vw;
 }
 
+.list {
+  margin-top: 4vw;
+}
+
 #home {
   overflow: hidden;
 }
@@ -351,7 +355,7 @@ li {
 
 @keyframes fadein {
   from { opacity: 0; }
-  to { opacity: 0.8; }
+  to { opacity: 1; }
 }
 
 @keyframes push {
