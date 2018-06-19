@@ -2,8 +2,6 @@ body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: "";
-  // background-image: url('images/cassette.png');
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: 10vw;
@@ -116,6 +114,7 @@ li {
 
 #h-box-1 {
   grid-column: 1;
+  padding-left: 1vw;
 }
 
 #h-box-2 {
@@ -290,28 +289,54 @@ li {
 
 .modal {
   height: 55vw;
-  width: 65vw;
-  // background-image: url('/images/tape-background.png');
+  width: 62vw;
+  background-image: url('/images/tape-background.png');
   background-size: cover;
   position: relative;
   left: 30vw;
   bottom: 47vw;
   margin-bottom: 10vw;
-  opacity: 0;
+  opacity: 1;
   animation-name: fadein;
   animation-delay: 4s;
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  text-align: center;
+  text-align: left;
+  font-family: 'Permanent Marker', cursive;
+  padding-top: 8.5vw;
+  padding-left: 2vw;
+  display: flex;
+}
+
+#m-box-1 {
+  width: 40vw;
+}
+
+#m-box-2 {
+  padding-left: 13vw;
+  padding-right: 4vw;
+}
+
+.modal>div>h3 {
+  font-size: 2.5vw;
+  margin: 0;
+}
+
+.modal>div>h2 {
+  margin-left: 10vw;
+}
+
+#m-box-2>p {
+  font-size: 1.4vw;
+}
+
+.modal-print {
+  margin-bottom: 1vw;
 }
 
 #home {
   overflow: hidden;
-}
-
-#pika {
-  margin-top: 20vw;
 }
 
 #portfolio {
@@ -350,4 +375,10 @@ li {
   body {
   max-width: 1400px;
   margin: 0 auto; }
+}
+
+@media ( max-width: 980px) {
+  #cassette {
+    display: none;
+  }
 }
