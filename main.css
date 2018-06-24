@@ -245,7 +245,7 @@ li {
 .modal {
   height: 55vw;
   width: 62vw;
-  background-image: url("/images/tape-background.png");
+  background-image: url("images/tape-background.png");
   background-size: cover;
   position: relative;
   left: 30vw;
@@ -322,9 +322,17 @@ li {
     bottom: 2vw;
     transform: rotate(90deg); } }
 @media (min-width: 1400px) {
-  body {
-    max-width: 1400px;
-    margin: 0 auto; } }
+  .bottom-buttons {
+    top: 12.2vw; }
+
+  .right-btns {
+    bottom: 8.2vw; }
+
+  #star {
+    bottom: 38.9vw; }
+
+  #flare {
+    bottom: 17.6vw; } }
 @media (max-width: 980px) {
   #cassette {
     display: none; } }
