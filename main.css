@@ -281,6 +281,24 @@ li {
 #contact {
   background-color: green; }
 
+.video {
+  display: inline-block;
+  margin: 0 3vw 0vw 0vw; }
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center; }
+  .project-container h3 {
+    margin-bottom: 0; }
+  .project-container p {
+    font-size: 0.8vw; }
+
+#contact {
+  text-align: center; }
+  #contact img {
+    width: 15vw; }
+
 @keyframes fadein {
   from {
     opacity: 0; }
