@@ -375,11 +375,11 @@ li {
   100% { bottom: 2vw; transform: rotate(90deg); }
 }
 
-@media (min-width: 1400px) {
-  body {
-  max-width: 1400px;
-  margin: 0 auto; }
-}
+// @media (min-width: 1400px) {
+//   body {
+//   max-width: 1400px;
+//   margin: 0 auto; }
+// }
 
 @media ( max-width: 980px) {
   #cassette {
