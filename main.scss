@@ -304,32 +304,16 @@ li {
   animation-fill-mode: forwards;
   text-align: left;
   font-family: 'Special Elite', cursive;
-  padding-top: 8.5vw;
+  padding-top: 4.5vw;
   padding-left: 2vw;
-  display: flex;
-}
 
-#m-box-1 {
-  width: 40vw;
-}
+  h3 {
+    font-size: 1.5vw;
+  }
 
-#m-box-2 {
-  padding-left: 10vw;
-  padding-right: 4vw;
-}
-
-.modal>div>h3 {
-  font-size: 1.8vw;
-  margin: 0;
-}
-
-.modal>div>h2 {
-  margin-top: 2vw;
-  margin-left: 4vw;
-}
-
-#m-box-2>p {
-  font-size: 1.4vw;
+  h2 {
+    font-size: 1.3vw;
+  }
 }
 
 .modal-print {
@@ -394,7 +378,7 @@ li {
   }
 }
 
-@media ( max-width: 980px) {
+@media ( max-width: 1000px) {
   #cassette {
     display: none;
   }
