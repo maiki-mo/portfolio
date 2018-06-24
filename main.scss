@@ -288,14 +288,14 @@ li {
 //modals
 
 .modal {
-  height: 55vw;
-  width: 62vw;
-  background-image: url('/images/tape-background.png');
+  height: 35vw;
+  width: 45vw;
+  background-image: url('images/tape-background.png');
   background-size: cover;
   position: relative;
-  left: 30vw;
+  left: 40vw;
   bottom: 47vw;
-  margin-bottom: 10vw;
+  margin-bottom: 6vw;
   opacity: 0;
   animation-name: fadein;
   animation-delay: 4s;
@@ -303,32 +303,17 @@ li {
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   text-align: left;
-  font-family: 'Permanent Marker', cursive;
-  padding-top: 8.5vw;
+  font-family: 'Special Elite', cursive;
+  padding-top: 4.5vw;
   padding-left: 2vw;
-  display: flex;
-}
 
-#m-box-1 {
-  width: 40vw;
-}
+  h3 {
+    font-size: 1.5vw;
+  }
 
-#m-box-2 {
-  padding-left: 13vw;
-  padding-right: 4vw;
-}
-
-.modal>div>h3 {
-  font-size: 2.5vw;
-  margin: 0;
-}
-
-.modal>div>h2 {
-  margin-left: 10vw;
-}
-
-#m-box-2>p {
-  font-size: 1.4vw;
+  h2 {
+    font-size: 1.3vw;
+  }
 }
 
 .modal-print {
@@ -336,7 +321,7 @@ li {
 }
 
 .list {
-  margin-top: 4vw;
+  margin-top: 0vw;
 }
 
 #home {
@@ -351,6 +336,30 @@ li {
 #contact {
   background-color: green;
   // display: none;
+}
+
+.video {
+  display: inline-block;
+  margin: 0 3vw 0vw 0vw;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  h3 {
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 0.8vw;
+  }
+}
+
+#contact {
+  text-align: center;
+  img {
+    width: 15vw;
+  }
 }
 
 @keyframes fadein {
@@ -376,12 +385,24 @@ li {
 }
 
 @media (min-width: 1400px) {
-  body {
-  max-width: 1400px;
-  margin: 0 auto; }
+  .bottom-buttons {
+    top: 12.2vw;
+  }
+  
+  .right-btns {
+    bottom: 8.1vw;
+  }
+
+  #star {
+    bottom: 38.9vw;
+  }
+
+  #flare {
+    bottom: 17.6vw;
+  }
 }
 
-@media ( max-width: 980px) {
+@media ( max-width: 1000px) {
   #cassette {
     display: none;
   }
