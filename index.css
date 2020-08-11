@@ -38,9 +38,10 @@ pre {
 
 .icons-container {
   margin: 0 20px;
-  background-color: #161616;
+  background-color: #0c0c0c;
   border-radius: 4px;
   padding: 4px;
+  transition: 0.3s;
 }
 
 .icons-container:hover {
