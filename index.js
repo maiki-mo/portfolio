@@ -1,22 +1,22 @@
 (() => {
     let init = false;
     let deg = 0;
-    let likeARecordBaby;
+    let roundRoundRoundRound;
 
     const youSpinMeRightRound = (event) => {
         const babyRightRound = () => {
             event.target.style.transform = `rotate(${deg}deg)`;
             deg += 1;
         };
-        const roundRoundRoundRound = () => clearInterval(likeARecordBaby);
+        const likeARecordBaby = () => clearInterval(roundRoundRoundRound);
         if (init) {
             event.target.style.transform = 'rotate(0deg)';
             init = false;
             deg = 0;
-            roundRoundRoundRound()
+            likeARecordBaby()
         } else {
             init = true;
-            likeARecordBaby = setInterval(babyRightRound, 1000);
+            roundRoundRoundRound = setInterval(babyRightRound, 1000);
         }
     };
 
